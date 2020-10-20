@@ -1608,7 +1608,8 @@ button.icon-unsorted{
 
 // start page-404
 .page-404,
-.about{
+.about,
+.contact{
     &__wrapper{
         border: 1px solid #dcdcdc;
         background-color: #fff;
@@ -1690,6 +1691,123 @@ button.icon-unsorted{
     }
 }
 // end about
+// start contacts
+.contact{
+    &__head{
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    &__inner{
+        background-color: #fff;
+        padding: 35px 40px 15px;
+        color: $bg;
+        text-align: start;
+    }
+    &__map{
+        margin-bottom: 50px;
+        iframe{
+            width: 100%;
+            height: 415px;
+        }
+    }
+    &__box{
+        display: flex;
+    }
+    &__info{
+        margin-right: 30px;
+        max-width: 330px;
+        width: 100%;
+        &-item{
+            margin-bottom: 30px;
+        }
+        &-title{
+            padding-bottom: 20px;
+            position: relative;
+            font-size: 20px;
+            @include f500;
+            color: $bg;
+            padding-left: 40px;
+            margin-bottom: 20px;
+            font-family: 'Roboto', sans-serif !important;
+            &::after{
+                content: '';
+                width: 44px;
+                height: 4px;
+                background-color: $green;
+                position: absolute;
+                left: 40px;
+                bottom: 0;
+            }
+            &::before{
+                color: $green;
+                font-size: 24px;
+                position: absolute;
+                left: 0;
+                font-family: 'icomoon';
+            }
+        }
+        &-content{
+            padding-left: 40px;
+            color: $text;
+            max-width: 230px;
+        }
+    }
+    &__form{
+        width: 100%;
+        &-title{
+        font-size: 24px;
+        @include f500;
+        margin-bottom: 20px;
+        color: $bg;
+        }
+        &-row{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        input{
+            border: none;
+            display: block;
+            background-color: #f1f4f5;
+            height: 43px;
+            padding-left: 17px;
+            padding-right: 17px;
+            width: 350px;
+            margin-bottom: 30px;
+            &::placeholder{
+                font-size: 15px;
+                color: $text;
+            }
+        }
+        textarea{
+            border: none;
+            background-color: #f1f4f5;
+            padding: 13px 17px;
+            height: 190px;
+            width: 100%;
+            display: block;
+            resize: none;
+            margin-bottom: 23px;
+            &::placeholder{
+                font-size: 15px;
+                color: $text;
+            }
+        }
+        button{
+            border: none;
+            color: #fff;
+            background-color: $green;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: center;
+            @include f700;
+            padding: 20px 5px;
+            width: 190px;
+        }
+    }
+
+}
+// end contacts
 
 @import 'media';
   
