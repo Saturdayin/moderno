@@ -1808,6 +1808,111 @@ button.icon-unsorted{
 
 }
 // end contacts
+// start settings
+.settings{
+    margin-bottom: 100px;
+}
+.product-one__tabs.settings__tabs{
+    display: flex;
+    .tabs{
+        max-width: 270px;
+        margin-right: 30px;
+        border-bottom: 1px solid #dedede;        
+        text-align: left;
+        width: 100%;
+        display: block;
+        height: 100%;
+        & + .tabs{
+            border-bottom: none;
+        }
+        span{
+            display: block;
+            background-color: #fff;            
+            padding: 17px 17px 17px 50px;
+            color: #707070;
+            font-size: 14px;
+            @include f500;
+            &::before{
+                left: 24px;
+                color: #444;
+            }
+        }
+    }
+    .tab_content{
+        width: 100%;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+    .tabs .tab+.tab{
+        border-left: 1px solid #dedede;
+        border-bottom: none;
+    }
+    .tab.angle-right:first-child{
+        border-bottom: none;
+    }
+    .tab.angle-right.active{
+        border-bottom: 2px solid $green;
+        color: #37474f;
+        &::before{
+            color: $green;
+        }
+    }
+}
+.page-box{
+    background-color: #fff;
+    border: 1px solid #dedede;
+    min-height: 100%;
+    &__title{
+        border-bottom: 1px solid #dedede;
+        padding: 18px 34px;
+        font-size: 24px;
+        color: $bg;
+        @include f500;
+    }
+    &__content{
+        padding: 30px 35px 80px;
+    }
+}
+.settings__line{
+    margin-bottom: 21px;
+    display: flex;
+    align-items: center;
+    label{
+        color: #444;
+        width: 260px;
+    }
+    input{
+        background-color: #f9f9f9;
+        max-width: 540px;
+        width: 100%;
+        border: 1px solid #dedede;
+        height: 40px;
+        color: $text;
+        padding: 0px 10px;
+    }
+    select{
+        background-color: #f9f9f9;
+        max-width: 540px;
+        width: 100%;
+        border: 1px solid #dedede;
+        height: 40px;
+        color: $text;
+        padding: 0px 10px;
+        color: #707070;
+    }
+    &-btn{
+        margin-left: 258px;
+        button{
+            color: #fff;
+            background-color: $green;
+            border: none;
+            padding: 15px 30px;
+        }
+    }
+}
 
+
+
+// end settings
 @import 'media';
-  
