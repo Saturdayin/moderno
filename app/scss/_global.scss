@@ -8,7 +8,9 @@ html{
 }
 html,
 body {
-	height: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 a{
     display: inline-block;
@@ -27,7 +29,6 @@ body{
     font-size: 15px;
     line-height: 24px;
     color: $text;
-    overflow-x: hidden;
 }
 .wrapper {
 	display: flex;
@@ -73,7 +74,9 @@ body{
 }
 .breadcrumbs{
     &__inner{
-       padding: 45px 0px 40px; 
+       padding: 45px 0px 40px;
+       overflow: hidden;
+       width: 1200px;
     }
     &__list{
         li{
@@ -113,4 +116,7 @@ body{
         left: 0;
         font-size: 14px;
     }
+}
+#modal{
+    display: none;
 }
